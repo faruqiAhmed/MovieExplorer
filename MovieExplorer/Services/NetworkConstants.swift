@@ -8,15 +8,11 @@
 import Foundation
 class NetworkConstants {
     public static var shared: NetworkConstants = NetworkConstants()
-    
     public var apiKey: String {
         get {
-         //   https://www.themoviedb.org/
-            //Put your own API key here
             return "8cb15aa4aa8011e577af1a6059db4243"
         }
     }
-    
     public var serverAddress: String {
         get {
             return "https://api.themoviedb.org/3/"

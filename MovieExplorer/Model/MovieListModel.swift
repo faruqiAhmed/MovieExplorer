@@ -17,7 +17,6 @@ struct MovieListModel: Codable {
         case totalResults = "total_results"
     }
 }
-
 // MARK: - Result
 struct Movie: Codable {
     let backdropPath: String?

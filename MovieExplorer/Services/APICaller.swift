@@ -22,7 +22,7 @@ public class APICaller {
         }
         
         let urlString = NetworkConstants.shared.serverAddress +
-                "trending/all/day?api_key=" +
+                "discover/tv??api_key=" +
                 NetworkConstants.shared.apiKey
                 
         guard let url = URL(string: urlString) else {
