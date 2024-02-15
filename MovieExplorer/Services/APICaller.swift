@@ -14,7 +14,7 @@ enum NetworkError: Error {
 }
 
 public class APICaller {
-    static func getTrendingMovies(completionHandler: @escaping (_ result: Result<TrendingMovieModel, NetworkError>) -> Void) {
+    static func getTrendingMovies(completionHandler: @escaping (_ result: Result<MovieListModel, NetworkError>) -> Void) {
         if NetworkConstants.shared.apiKey.isEmpty {
             print("<!> API KEY is Missing <!>")
             print("<!> Get One from: https://www.themoviedb.org/ <!>")
@@ -33,7 +33,7 @@ public class APICaller {
         URLSession.shared.dataTask(with: url) { dataResponse, urlResponse, err in
             if err == nil,
                let data = dataResponse,
-               let resultData = try? JSONDecoder().decode(TrendingMovieModel.self, from: data) {
+               let resultData = try? JSONDecoder().decode(MovieListModel.self, from: data) {
                 completionHandler(.success(resultData))
             } else {
                 print(err.debugDescription)
