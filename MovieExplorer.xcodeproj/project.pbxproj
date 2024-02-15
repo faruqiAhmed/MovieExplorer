@@ -13,6 +13,7 @@
 		E2EDD32E2B7E3E4F007A6C1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EDD32C2B7E3E4F007A6C1A /* Main.storyboard */; };
 		E2EDD3302B7E3E51007A6C1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EDD32F2B7E3E51007A6C1A /* Assets.xcassets */; };
 		E2EDD3332B7E3E51007A6C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EDD3312B7E3E51007A6C1A /* LaunchScreen.storyboard */; };
+		E2EDD33B2B7E4222007A6C1A /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD33A2B7E4222007A6C1A /* MovieListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E2EDD32F2B7E3E51007A6C1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2EDD3322B7E3E51007A6C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2EDD3342B7E3E51007A6C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2EDD33A2B7E4222007A6C1A /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		E2EDD3252B7E3E4F007A6C1A /* MovieExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				E2EDD33D2B7E430C007A6C1A /* StoryBoard */,
+				E2EDD33C2B7E4229007A6C1A /* ViewController */,
 				E2EDD3262B7E3E4F007A6C1A /* AppDelegate.swift */,
 				E2EDD3282B7E3E4F007A6C1A /* SceneDelegate.swift */,
-				E2EDD32A2B7E3E4F007A6C1A /* ViewController.swift */,
-				E2EDD32C2B7E3E4F007A6C1A /* Main.storyboard */,
 				E2EDD32F2B7E3E51007A6C1A /* Assets.xcassets */,
 				E2EDD3312B7E3E51007A6C1A /* LaunchScreen.storyboard */,
 				E2EDD3342B7E3E51007A6C1A /* Info.plist */,
 			);
 			path = MovieExplorer;
+			sourceTree = "<group>";
+		};
+		E2EDD33C2B7E4229007A6C1A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2EDD32A2B7E3E4F007A6C1A /* ViewController.swift */,
+				E2EDD33A2B7E4222007A6C1A /* MovieListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E2EDD33D2B7E430C007A6C1A /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E2EDD32C2B7E3E4F007A6C1A /* Main.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,7 @@
 				E2EDD32B2B7E3E4F007A6C1A /* ViewController.swift in Sources */,
 				E2EDD3272B7E3E4F007A6C1A /* AppDelegate.swift in Sources */,
 				E2EDD3292B7E3E4F007A6C1A /* SceneDelegate.swift in Sources */,
+				E2EDD33B2B7E4222007A6C1A /* MovieListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
