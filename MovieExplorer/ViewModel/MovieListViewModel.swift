@@ -54,6 +54,7 @@ class MovieListViewModel {
             case .success(let trendingMovieData):
                 self?.dataSource = trendingMovieData
                 self?.mapMovieData()
+                print(result)
             case .failure(let err):
                 print(err)
             }
@@ -65,7 +66,7 @@ class MovieListViewModel {
     }
     
     func getMovieTitle(_ movie: Movie) -> String {
-        return movie.title ?? movie.name ?? ""
+        return movie.title ?? ""
     }
     
     func retriveMovie(withId id: Int) -> Movie? {

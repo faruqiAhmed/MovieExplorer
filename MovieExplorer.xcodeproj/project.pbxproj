@@ -21,6 +21,7 @@
 		E2EDD34E2B7E9057007A6C1A /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD34D2B7E9057007A6C1A /* MovieListModel.swift */; };
 		E2EDD3512B7E9472007A6C1A /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD3502B7E9472007A6C1A /* MovieListViewModel.swift */; };
 		E2EDD3532B7E96B2007A6C1A /* MovieCollCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD3522B7E96B2007A6C1A /* MovieCollCellViewModel.swift */; };
+		E2EDD3572B7EAEB5007A6C1A /* ViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD3562B7EAEB5007A6C1A /* ViewController+TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		E2EDD34D2B7E9057007A6C1A /* MovieListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModel.swift; sourceTree = "<group>"; };
 		E2EDD3502B7E9472007A6C1A /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		E2EDD3522B7E96B2007A6C1A /* MovieCollCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollCellViewModel.swift; sourceTree = "<group>"; };
+		E2EDD3562B7EAEB5007A6C1A /* ViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				E2EDD32A2B7E3E4F007A6C1A /* ViewController.swift */,
 				E2EDD33A2B7E4222007A6C1A /* MovieListViewController.swift */,
+				E2EDD3562B7EAEB5007A6C1A /* ViewController+TableView.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				E2EDD3272B7E3E4F007A6C1A /* AppDelegate.swift in Sources */,
 				E2EDD3292B7E3E4F007A6C1A /* SceneDelegate.swift in Sources */,
 				E2EDD33B2B7E4222007A6C1A /* MovieListViewController.swift in Sources */,
+				E2EDD3572B7EAEB5007A6C1A /* ViewController+TableView.swift in Sources */,
 				E2EDD3512B7E9472007A6C1A /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
