@@ -130,7 +130,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="95"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MovieList" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZx-yM-Psh">
-                                        <rect key="frame" x="157.66666666666663" y="64" width="78.000000000000028" height="21"/>
+                                        <rect key="frame" x="157.66666666666666" y="64" width="78" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
                                         <nil key="highlightedColor"/>
@@ -229,7 +229,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="esm-H8-7Os"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="FXY-Oh-M5u"/>
                         <segue destination="F7Z-RC-A3C" kind="relationship" relationship="viewControllers" id="Spx-cG-7zZ"/>
                         <segue destination="lYj-Dh-uEz" kind="relationship" relationship="viewControllers" id="1bu-pr-ATW"/>
                     </connections>

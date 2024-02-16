@@ -9,16 +9,16 @@ import Foundation
 class  MovieCollCellViewModel {
     var id: Int
     var name: String
-//    var date: String
+    var date: String
 //    var score: String
-  //  var image: URL?
+    var image: URL?
     
     init(movie: Movie) {
         self.id = movie.id
         self.name = movie.name ?? ""
-//        self.date = movie.releaseDate ?? movie.firstAirDate ?? ""
+       self.date = movie.releaseDate ?? movie.firstAirDate ?? ""
 //        self.score = "\(movie.voteAverage)/10"
-       // self.image = makeImageURL(movie.posterPath ?? "")
+        self.image = makeImageURL(movie.posterPath ?? "")
     }
     
     private func makeImageURL(_ imageCode: String) -> URL? {

@@ -27,7 +27,7 @@ class MovieListViewController: UIViewController, UICollectionViewDataSource,UICo
         self.movieListColl.dataSource=self
                 self.movieListColl.delegate=self
                 self.movieListColl.register(UINib(nibName: "MovieListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MovieListCollectionViewCell")
-                let cellSize = CGSize(width:200 , height:182)
+                let cellSize = CGSize(width:120 , height:120)
         
                 self.navigationController?.isNavigationBarHidden = true
         
@@ -93,9 +93,26 @@ class MovieListViewController: UIViewController, UICollectionViewDataSource,UICo
         cell.setupCell(viewModel: moviesDataSource[indexPath.row])
        // cell.selectionStyle = .none
         return cell
-        
-       
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            let movieId = moviesDataSource[indexPath.row].id
+            self.openDetails(movieId: movieId)
+    }
+    
    
+    
+    func openDetails(movieId: Int) {
+        guard let movie = viewModel.retriveMovie(withId: movieId) else {
+            return
+        }
+        
+        DispatchQueue.main.async {
+            let detailsViewModel = DetailsMovieViewModel(movie: movie)
+            let controller = DetailsMovieViewController(viewModel: detailsViewModel)
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
 
 }
