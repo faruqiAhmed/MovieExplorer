@@ -49,7 +49,6 @@ class MovieListViewModel {
         isLoadingData.value = true
         APICaller.getTrendingMovies { [weak self] result in
             self?.isLoadingData.value = false
-            
             switch result {
             case .success(let trendingMovieData):
                 self?.dataSource = trendingMovieData
