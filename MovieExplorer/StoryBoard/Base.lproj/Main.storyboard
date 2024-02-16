@@ -187,11 +187,16 @@
         <!--Search-->
         <scene sceneID="sTH-cD-fwY">
             <objects>
-                <viewController id="lYj-Dh-uEz" sceneMemberID="viewController">
+                <viewController id="lYj-Dh-uEz" customClass="SearchViewController" customModule="MovieExplorer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8px-uS-HI2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="PD9-R7-Ita">
+                                <rect key="frame" x="0.0" y="387" width="375" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" systemColor="systemGrayColor"/>
+                            </activityIndicatorView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUR-hs-B4x">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
                                 <subviews>
@@ -263,6 +268,10 @@
                     <tabBarItem key="tabBarItem" title="Search" id="djD-r5-N5C">
                         <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="PD9-R7-Ita" id="bMq-Hu-SLB"/>
+                        <outlet property="tableView" destination="Fo6-iC-hLU" id="F2B-r7-oMt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdW-JB-nyC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

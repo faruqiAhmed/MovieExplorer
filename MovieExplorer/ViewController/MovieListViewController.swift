@@ -8,15 +8,13 @@
 import UIKit
 
 class MovieListViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate  {
-   
     var cells = MovieListCollectionViewCell()
     @IBOutlet weak var movieListColl: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     //ViewModel
     var viewModel: MovieListViewModel = MovieListViewModel()
-    
     //Variables:
-    var moviesDataSource: [MovieCollCellViewModel] = []
+   var moviesDataSource: [MovieCollCellViewModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,15 +92,10 @@ class MovieListViewController: UIViewController, UICollectionViewDataSource,UICo
        // cell.selectionStyle = .none
         return cell
     }
-    
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
             let movieId = moviesDataSource[indexPath.row].id
             self.openDetails(movieId: movieId)
     }
-    
-   
-    
     func openDetails(movieId: Int) {
         guard let movie = viewModel.retriveMovie(withId: movieId) else {
             return
