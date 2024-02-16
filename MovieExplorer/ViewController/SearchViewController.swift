@@ -9,15 +9,18 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    
     var viewModel: SearchViewModel = SearchViewModel()
     
     //Variables:
     var moviesDataSource: [MovieTableCellViewModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        searchBar.delegate = self
         configView()
         bindViewModel()
     }
@@ -67,8 +70,12 @@ class SearchViewController: UIViewController {
             self.navigationController?.pushViewController(controller, animated: true)
         }
     }
-    
+}
 
-    
-    
+extension SearchViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+     //   viewModel.(withQuery: searchText) {
+            self.tableView.reloadData()
+       // }
+    }
 }

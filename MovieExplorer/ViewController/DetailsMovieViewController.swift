@@ -8,8 +8,6 @@
 import UIKit
 
 class DetailsMovieViewController: UIViewController {
-    
-    
     @IBOutlet weak var movieImageView: UIImageView!
     
     @IBOutlet weak var titleLbl: UILabel!
@@ -17,7 +15,6 @@ class DetailsMovieViewController: UIViewController {
     @IBOutlet weak var releaseDateLbl: UILabel!
     @IBOutlet weak var overviewLbl: UILabel!
     @IBOutlet weak var ratingLbl: UILabel!
-    
     //View model
     var viewModel: DetailsMovieViewModel
     
@@ -38,7 +35,7 @@ class DetailsMovieViewController: UIViewController {
     func configView() {
       //  self.title = "Movie Details"
         titleLbl.text = viewModel.movieTitle
-     //   movieImageView.sd_setImage(with: viewModel.movieImage)
+     //  movieImageView.sd_setImage(with: viewModel.movieImage)
         overviewLbl.text = viewModel.movieDescription
     }
 

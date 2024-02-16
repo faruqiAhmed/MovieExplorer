@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E2EDD3272B7E3E4F007A6C1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD3262B7E3E4F007A6C1A /* AppDelegate.swift */; };
 		E2EDD3292B7E3E4F007A6C1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD3282B7E3E4F007A6C1A /* SceneDelegate.swift */; };
-		E2EDD32B2B7E3E4F007A6C1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD32A2B7E3E4F007A6C1A /* ViewController.swift */; };
 		E2EDD32E2B7E3E4F007A6C1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EDD32C2B7E3E4F007A6C1A /* Main.storyboard */; };
 		E2EDD3302B7E3E51007A6C1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EDD32F2B7E3E51007A6C1A /* Assets.xcassets */; };
 		E2EDD3332B7E3E51007A6C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EDD3312B7E3E51007A6C1A /* LaunchScreen.storyboard */; };
@@ -32,13 +31,17 @@
 		E2EDD3782B7F6229007A6C1A /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EDD3762B7F6229007A6C1A /* MovieTableViewCell.xib */; };
 		E2EDD37A2B7F645B007A6C1A /* MovieTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD3792B7F645B007A6C1A /* MovieTableCellViewModel.swift */; };
 		E2EDD37E2B7F6BD5007A6C1A /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD37D2B7F6BD5007A6C1A /* SearchViewModel.swift */; };
+		E2EDD3802B7F849F007A6C1A /* TvShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD37F2B7F849F007A6C1A /* TvShowViewController.swift */; };
+		E2EDD3862B7F894B007A6C1A /* TvShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD3852B7F894B007A6C1A /* TvShowViewModel.swift */; };
+		E2EDD3882B7F89CE007A6C1A /* TvShowCollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD3872B7F89CE007A6C1A /* TvShowCollViewModel.swift */; };
+		E2EDD38B2B7F8E0A007A6C1A /* TvShowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD3892B7F8E0A007A6C1A /* TvShowCollectionViewCell.swift */; };
+		E2EDD38C2B7F8E0A007A6C1A /* TvShowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EDD38A2B7F8E0A007A6C1A /* TvShowCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2EDD3232B7E3E4F007A6C1A /* MovieExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EDD3262B7E3E4F007A6C1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2EDD3282B7E3E4F007A6C1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E2EDD32A2B7E3E4F007A6C1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2EDD32D2B7E3E4F007A6C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2EDD32F2B7E3E51007A6C1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2EDD3322B7E3E51007A6C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +63,11 @@
 		E2EDD3762B7F6229007A6C1A /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		E2EDD3792B7F645B007A6C1A /* MovieTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableCellViewModel.swift; sourceTree = "<group>"; };
 		E2EDD37D2B7F6BD5007A6C1A /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		E2EDD37F2B7F849F007A6C1A /* TvShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowViewController.swift; sourceTree = "<group>"; };
+		E2EDD3852B7F894B007A6C1A /* TvShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowViewModel.swift; sourceTree = "<group>"; };
+		E2EDD3872B7F89CE007A6C1A /* TvShowCollViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowCollViewModel.swift; sourceTree = "<group>"; };
+		E2EDD3892B7F8E0A007A6C1A /* TvShowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2EDD38A2B7F8E0A007A6C1A /* TvShowCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TvShowCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,12 +121,12 @@
 		E2EDD33C2B7E4229007A6C1A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E2EDD32A2B7E3E4F007A6C1A /* ViewController.swift */,
 				E2EDD33A2B7E4222007A6C1A /* MovieListViewController.swift */,
 				E2EDD3562B7EAEB5007A6C1A /* ViewController+TableView.swift */,
 				E2EDD3602B7F2D50007A6C1A /* DetailsMovieViewController.swift */,
 				E2EDD3612B7F2D50007A6C1A /* DetailsMovieViewController.xib */,
 				E2EDD3712B7F6131007A6C1A /* SearchViewController.swift */,
+				E2EDD37F2B7F849F007A6C1A /* TvShowViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -136,6 +144,8 @@
 			children = (
 				E2EDD33F2B7E6891007A6C1A /* MovieListCollectionViewCell.swift */,
 				E2EDD3402B7E6891007A6C1A /* MovieListCollectionViewCell.xib */,
+				E2EDD3892B7F8E0A007A6C1A /* TvShowCollectionViewCell.swift */,
+				E2EDD38A2B7F8E0A007A6C1A /* TvShowCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -165,6 +175,8 @@
 				E2EDD3662B7F3490007A6C1A /* DetailsMovieViewModel.swift */,
 				E2EDD3792B7F645B007A6C1A /* MovieTableCellViewModel.swift */,
 				E2EDD37D2B7F6BD5007A6C1A /* SearchViewModel.swift */,
+				E2EDD3852B7F894B007A6C1A /* TvShowViewModel.swift */,
+				E2EDD3872B7F89CE007A6C1A /* TvShowCollViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -249,6 +261,7 @@
 				E2EDD32E2B7E3E4F007A6C1A /* Main.storyboard in Resources */,
 				E2EDD3632B7F2D50007A6C1A /* DetailsMovieViewController.xib in Resources */,
 				E2EDD3422B7E6891007A6C1A /* MovieListCollectionViewCell.xib in Resources */,
+				E2EDD38C2B7F8E0A007A6C1A /* TvShowCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +273,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EDD3492B7E8C85007A6C1A /* NetworkConstants.swift in Sources */,
-				E2EDD32B2B7E3E4F007A6C1A /* ViewController.swift in Sources */,
+				E2EDD3882B7F89CE007A6C1A /* TvShowCollViewModel.swift in Sources */,
 				E2EDD3412B7E6891007A6C1A /* MovieListCollectionViewCell.swift in Sources */,
+				E2EDD38B2B7F8E0A007A6C1A /* TvShowCollectionViewCell.swift in Sources */,
+				E2EDD3862B7F894B007A6C1A /* TvShowViewModel.swift in Sources */,
 				E2EDD34B2B7E8DDA007A6C1A /* APICaller.swift in Sources */,
 				E2EDD3622B7F2D50007A6C1A /* DetailsMovieViewController.swift in Sources */,
 				E2EDD3772B7F6229007A6C1A /* MovieTableViewCell.swift in Sources */,
 				E2EDD34E2B7E9057007A6C1A /* MovieListModel.swift in Sources */,
 				E2EDD3532B7E96B2007A6C1A /* MovieCollCellViewModel.swift in Sources */,
 				E2EDD3272B7E3E4F007A6C1A /* AppDelegate.swift in Sources */,
+				E2EDD3802B7F849F007A6C1A /* TvShowViewController.swift in Sources */,
 				E2EDD3722B7F6131007A6C1A /* SearchViewController.swift in Sources */,
 				E2EDD3292B7E3E4F007A6C1A /* SceneDelegate.swift in Sources */,
 				E2EDD33B2B7E4222007A6C1A /* MovieListViewController.swift in Sources */,

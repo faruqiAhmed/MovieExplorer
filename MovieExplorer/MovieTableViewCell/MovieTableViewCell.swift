@@ -12,8 +12,7 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLbl: UILabel!
     
     @IBOutlet weak var movieImgeView: UIImageView!
-    
-    
+
     static var identifier: String {
         get {
             "MovieTableViewCell"
@@ -23,13 +22,10 @@ class MovieTableViewCell: UITableViewCell {
     static func register() -> UINib {
         UINib(nibName: "MovieTableViewCell", bundle: nil)
     }
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         

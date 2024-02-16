@@ -1,18 +1,15 @@
 //
-//  SearchViewModel.swift
+//  TvShowViewModel.swift
 //  MovieExplorer
 //
 //  Created by Md Omar Faruq on 16/2/24.
 //
 
 import Foundation
-
-
-class SearchViewModel {
+class TvShowViewModel {
     var isLoadingData: Observable<Bool> = Observable(false)
     var dataSource: MovieListModel?
-    var movies: Observable<[MovieTableCellViewModel]> = Observable(nil)
-    var movie : [MovieListModel] = []
+    var movies: Observable<[TvShowCollViewModel]> = Observable(nil)
     func numberOfSections() -> Int {
         return 1
     }
@@ -20,13 +17,12 @@ class SearchViewModel {
     func numberOfRows(in section: Int) -> Int {
         return dataSource?.results.count ?? 0
     }
-    
-    func getData() {
+    func getDataTV() {
         if isLoadingData.value ?? true {
             return
         }
         isLoadingData.value = true
-        APICaller.getTrendingMovies { [weak self] result in
+        APICaller.getTvMovies{ [weak self] result in
             self?.isLoadingData.value = false
             switch result {
             case .success(let trendingMovieData):
@@ -38,9 +34,8 @@ class SearchViewModel {
             }
         }
     }
-    
     private func mapMovieData() {
-        movies.value = self.dataSource?.results.compactMap({MovieTableCellViewModel(movie: $0)})
+        movies.value = self.dataSource?.results.compactMap({TvShowCollViewModel(movie: $0)})
     }
     
     func getMovieTitle(_ movie: Movie) -> String {
@@ -54,6 +49,4 @@ class SearchViewModel {
         
         return movie
     }
- 
 }
-
