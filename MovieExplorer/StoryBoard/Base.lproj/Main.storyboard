@@ -130,9 +130,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MovieList" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZx-yM-Psh">
-                                        <rect key="frame" x="137.66666666666663" y="44" width="100.00000000000003" height="20.666666666666671"/>
+                                        <rect key="frame" x="137.66666666666666" y="56.999999999999993" width="100" height="20.666666666666664"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="sit-O2-zqG"/>
+                                            <constraint firstAttribute="width" constant="100" id="ZfM-QZ-NGx"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
@@ -141,9 +141,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.6470588235294118" green="0.10588235294117647" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="IZx-yM-Psh" firstAttribute="centerX" secondItem="pum-dd-WCG" secondAttribute="centerX" id="0tI-Ei-cJD"/>
-                                    <constraint firstItem="IZx-yM-Psh" firstAttribute="top" secondItem="pum-dd-WCG" secondAttribute="top" constant="44" id="EFV-cU-kIL"/>
-                                    <constraint firstAttribute="height" constant="95" id="Gja-kr-ne1"/>
+                                    <constraint firstItem="IZx-yM-Psh" firstAttribute="top" secondItem="pum-dd-WCG" secondAttribute="top" constant="57" id="Nj2-Ae-dUJ"/>
+                                    <constraint firstItem="IZx-yM-Psh" firstAttribute="centerX" secondItem="pum-dd-WCG" secondAttribute="centerX" id="Yk3-7j-uih"/>
+                                    <constraint firstAttribute="height" constant="95" id="wqr-80-yhY"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IrK-I6-9Ub">
@@ -161,13 +161,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pum-dd-WCG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="B1k-7h-ZmC"/>
-                            <constraint firstItem="IrK-I6-9Ub" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ELY-WP-jqu"/>
-                            <constraint firstItem="IrK-I6-9Ub" firstAttribute="top" secondItem="pum-dd-WCG" secondAttribute="bottom" constant="8" symbolic="YES" id="fWr-o4-sSN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IrK-I6-9Ub" secondAttribute="bottom" constant="18" id="jSL-Fc-VoZ"/>
-                            <constraint firstItem="pum-dd-WCG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mKZ-BS-Hm0"/>
-                            <constraint firstItem="IrK-I6-9Ub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uLH-c4-luP"/>
-                            <constraint firstItem="pum-dd-WCG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="z51-fU-SjJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IrK-I6-9Ub" secondAttribute="bottom" constant="18" id="49d-W3-f5h"/>
+                            <constraint firstItem="IrK-I6-9Ub" firstAttribute="top" secondItem="pum-dd-WCG" secondAttribute="bottom" constant="8" symbolic="YES" id="C9Z-P1-CzU"/>
+                            <constraint firstItem="IrK-I6-9Ub" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IgG-Ij-3CY"/>
+                            <constraint firstItem="pum-dd-WCG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MHh-Kw-Et3"/>
+                            <constraint firstItem="IrK-I6-9Ub" firstAttribute="top" secondItem="pum-dd-WCG" secondAttribute="bottom" constant="8" symbolic="YES" id="N5Y-lb-LCx"/>
+                            <constraint firstItem="pum-dd-WCG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Pe9-hd-zcQ"/>
+                            <constraint firstItem="pum-dd-WCG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kYA-H4-0mN"/>
+                            <constraint firstItem="IrK-I6-9Ub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m7F-i7-dcV"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Movie" selectedImage="movieclapper" catalog="system" id="gpR-HD-PIx">
@@ -200,16 +201,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUR-hs-B4x">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkT-Ri-Vw7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkT-Ri-Vw7">
                                         <rect key="frame" x="129" y="65" width="117" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="117" id="22V-ri-6Cy"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kQo-N0-Yfc">
-                                        <rect key="frame" x="233" y="56" width="111" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kQo-N0-Yfc">
+                                        <rect key="frame" x="248" y="56" width="111" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="w0g-Fh-xO6"/>
+                                        </constraints>
                                         <segments>
                                             <segment title="Movie"/>
                                             <segment title="TV"/>
@@ -218,6 +223,14 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.64705882349999999" green="0.1058823529" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kQo-N0-Yfc" secondAttribute="trailing" constant="16" id="D61-1h-SGs"/>
+                                    <constraint firstItem="UkT-Ri-Vw7" firstAttribute="leading" secondItem="wUR-hs-B4x" secondAttribute="leading" constant="129" id="JZZ-LV-nhr"/>
+                                    <constraint firstItem="UkT-Ri-Vw7" firstAttribute="top" secondItem="wUR-hs-B4x" secondAttribute="top" constant="65" id="L3o-Sr-IZh"/>
+                                    <constraint firstItem="UkT-Ri-Vw7" firstAttribute="centerX" secondItem="wUR-hs-B4x" secondAttribute="centerX" id="Nyw-f0-Hrc"/>
+                                    <constraint firstAttribute="bottom" secondItem="UkT-Ri-Vw7" secondAttribute="bottom" constant="8" id="Tfj-qE-MHv"/>
+                                    <constraint firstAttribute="bottom" secondItem="kQo-N0-Yfc" secondAttribute="bottom" constant="8" id="VAq-Nt-a7l"/>
+                                    <constraint firstItem="kQo-N0-Yfc" firstAttribute="leading" secondItem="UkT-Ri-Vw7" secondAttribute="trailing" constant="2" id="YQC-Go-cTD"/>
+                                    <constraint firstItem="kQo-N0-Yfc" firstAttribute="top" secondItem="wUR-hs-B4x" secondAttribute="top" constant="56" id="ihs-um-U3T"/>
                                     <constraint firstAttribute="height" constant="95" id="k5b-HI-whD"/>
                                 </constraints>
                             </view>
@@ -284,8 +297,35 @@
                     <view key="view" contentMode="scaleToFill" id="B8M-7Y-JjX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Wi-xP-qZp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TV Show" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8f-E9-MFS">
+                                        <rect key="frame" x="151.66666666666666" y="58" width="71.666666666666657" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="6eF-SF-2Zi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.1058823529" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="K8f-E9-MFS" firstAttribute="centerX" secondItem="5Wi-xP-qZp" secondAttribute="centerX" id="Fe5-fU-Nhp"/>
+                                    <constraint firstItem="K8f-E9-MFS" firstAttribute="top" secondItem="5Wi-xP-qZp" secondAttribute="top" constant="58" id="MQ8-kg-AhV"/>
+                                    <constraint firstAttribute="height" constant="95" id="dCe-Z6-GKI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rSb-df-CS9"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" systemColor="tableBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Wi-xP-qZp" firstAttribute="trailing" secondItem="rSb-df-CS9" secondAttribute="trailing" id="5jE-AB-uSD"/>
+                            <constraint firstItem="5Wi-xP-qZp" firstAttribute="top" secondItem="B8M-7Y-JjX" secondAttribute="top" id="tez-ik-K1o"/>
+                            <constraint firstItem="5Wi-xP-qZp" firstAttribute="leading" secondItem="rSb-df-CS9" secondAttribute="leading" id="uEy-D3-fVo"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="TV show" id="i5s-7Z-7AH">
                         <imageReference key="image" image="play.tv.fill" catalog="system" symbolScale="large"/>
@@ -293,7 +333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="quh-tE-uYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2492" y="706"/>
+            <point key="canvasLocation" x="2490" y="700"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iLz-dx-9h0">
@@ -329,8 +369,8 @@
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="tableBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
